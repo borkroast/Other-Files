@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class HexDex {
-
+// Hex code
 
     public static short hexCharDecode(char hexChar){ //Decode single character
         short ret;
@@ -18,7 +18,7 @@ public class HexDex {
     }
 
 
-
+// Hex Code
     public static long hexStringDecode(String hex) {   //Decode whole hex string
 
         long decimal = 0;
@@ -51,7 +51,7 @@ public class HexDex {
 
         return decimal;
     }
-
+// binary string code
     public static long binaryStringDecode(String bin){ //Convert from binary to dec
 
         long decimal = 0;
@@ -60,7 +60,7 @@ public class HexDex {
 
         if (bin.charAt(1) == 'b') {
 
-            bin = bin.substring(2); //gets rid of 0b
+            bin = bin.substring(2); //gets rid of 0bad
         }
 
         int[] integerArray = new int[bin.length()]; //Integer array
@@ -79,6 +79,7 @@ public class HexDex {
     }
 
 
+    // Binary to hex conversion
     public static String binaryToHex(String bin){
         long decimal = binaryStringDecode(bin);
         long hex = 0;
